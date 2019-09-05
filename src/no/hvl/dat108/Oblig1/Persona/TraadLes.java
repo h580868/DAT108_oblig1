@@ -8,6 +8,13 @@ public class TraadLes implements Runnable{
 
     @Override
     public void run() {
-        System.out.println(person);
+        while (true) {
+            System.out.println(person.toString());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
