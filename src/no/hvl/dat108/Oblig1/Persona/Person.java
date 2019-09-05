@@ -5,7 +5,7 @@ public class Person {
     private StringBuffer fName;
     private StringBuffer lName;
 
-    public Person(StringBuffer fName StringBuffer lName) {
+    public Person(StringBuffer fName, StringBuffer lName) {
         this.fName = fName;
         this.lName = lName;
     }
