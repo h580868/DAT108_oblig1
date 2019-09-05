@@ -2,27 +2,21 @@ package no.hvl.dat108.Oblig1.Persona;
 
 
 public class Person {
-    private StringBuffer fName;
-    private StringBuffer lName;
+    private StringBuffer Name;
 
-    public Person(StringBuffer fName, StringBuffer lName) {
-        this.fName = fName;
-        this.lName = lName;
+
+    public Person(StringBuffer Name) {
+        this.Name = Name;
+
     }
 
     public StringBuffer getlName() {
-        return lName;
+        return Name;
     }
 
-    public void setlName(StringBuffer lName) {
-        this.lName = lName;
+    public void setlName(StringBuffer Name) {
+        this.Name = Name;
     }
 
-    public StringBuffer getfName() {
-        return fName;
-    }
 
-    public void setfName(StringBuffer fName) {
-        this.fName = fName;
-    }
 }
