@@ -5,8 +5,8 @@ public class Person {
     private StringBuffer name;
 
 
-    public Person(StringBuffer Name) {
-        this.name = Name;
+    public Person(String name) {
+        this.name.append(name);
 
     }
 
@@ -14,8 +14,8 @@ public class Person {
         return name;
     }
 
-    public void setlName(StringBuffer Name) {
-        this.name = Name;
+    public void setlName(StringBuffer name) {
+        this.name = name;
     }
 
 
