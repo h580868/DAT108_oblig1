@@ -10,11 +10,11 @@ public class Person {
 
     }
 
-    public StringBuffer getlName() {
+    public StringBuffer getName() {
         return name;
     }
 
-    public void setlName(StringBuffer name) {
+    public void setName(StringBuffer name) {
         this.name = name;
     }
 
