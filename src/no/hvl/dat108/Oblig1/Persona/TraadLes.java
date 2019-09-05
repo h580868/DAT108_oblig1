@@ -1,6 +1,6 @@
 package no.hvl.dat108.Oblig1.Persona;
 
-public class TraadUt implements Runnable{
+public class TraadLes implements Runnable{
     @Override
     public void run() {
 
