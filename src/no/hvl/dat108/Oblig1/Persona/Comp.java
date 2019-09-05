@@ -6,8 +6,8 @@ public class Comp {
 
         //sout + tab = System.out.println
 
-        // psvm + tab = public static .....
+        // psvm + tab = public static ....
 
-        
+
     }
 }
