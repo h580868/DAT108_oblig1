@@ -1,7 +1,7 @@
 package no.hvl.dat108.Oblig1.Persona;
 
 public class TraadLes implements Runnable{
-    StringBuffer person;
+    private StringBuffer person;
     public TraadLes(StringBuffer person) {
         this.person = person;
     }

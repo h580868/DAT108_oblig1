@@ -1,7 +1,7 @@
 package no.hvl.dat108.Oblig1.Persona;
 
 public class TraadSkriv implements Runnable{
-    StringBuffer person;
+    private StringBuffer person;
 
     public TraadSkriv(StringBuffer person) {
         this.person = person;
