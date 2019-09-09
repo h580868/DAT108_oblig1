@@ -21,7 +21,7 @@ public class Main {
             if(a>b) {return a;} else { return b;}
         }, -5, 3));
         // iii. Avstanden (absoluttverdien av differansen) mellom 54 og 45
-        System.out.println(beregn((a,b) ->(a-b), 54, 45));
+        System.out.println(beregn((a,b) -> Math.abs(a-b), 54, 45));
     }
 
     public static int beregn( BiFunction<Integer, Integer, Integer> bi, int a, int b){
