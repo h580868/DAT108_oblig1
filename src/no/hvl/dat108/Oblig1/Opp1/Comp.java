@@ -1,10 +1,11 @@
-package no.hvl.dat108.Oblig1.Persona;
+package no.hvl.dat108.Oblig1.Opp1;
 
 public class Comp {
 
     public static void main(String[] args) {
 
         //Person person = new Person("Jim");
+
         StringBuffer person = new StringBuffer();
 
 
