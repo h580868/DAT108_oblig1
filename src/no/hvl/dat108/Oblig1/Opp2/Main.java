@@ -12,7 +12,6 @@ public class Main {
        System.out.println(listen);
 
 
-
        //   2b
         // i. Summen av 12 og 13
         System.out.println(beregn((a,b) ->(a+b), 12, 13));
