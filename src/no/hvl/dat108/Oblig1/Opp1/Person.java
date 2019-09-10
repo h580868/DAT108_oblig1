@@ -2,20 +2,24 @@ package no.hvl.dat108.Oblig1.Opp1;
 
 
 public class Person {
-    private StringBuffer name;
+    private static StringBuffer name;
 
 
-    public Person(String name) {
-        this.name.append(name);
+    public Person() {
+        name = new StringBuffer();
 
     }
 
-    public StringBuffer getName() {
-        return name;
+    public static String getName() {
+        return name.toString();
     }
 
-    public void setName(StringBuffer name) {
-        this.name = name;
+    public static void setName(String newName) {
+        if (name.length() > 0) {
+            name.replace(0, name.length(), newName);
+        } else {
+            name.append(newName);
+        }
     }
 
 

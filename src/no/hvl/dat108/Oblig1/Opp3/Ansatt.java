@@ -47,7 +47,7 @@ public class Ansatt {
     public void setAarslonn(int aarslonn) {
         this.aarslonn = aarslonn;
     }
-
+/*
     private static void lonnsoppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer>) {
 
     setAarslonn();
@@ -56,6 +56,8 @@ public class Ansatt {
     private static void skrivUtAlle(List<Ansatt> ansatte){
         Ansatt.forEach(n -> System.out.println(n));
     }
+*/
+
 }
   /*  Ansatte har fornavn (String),
   etternavn (String),
