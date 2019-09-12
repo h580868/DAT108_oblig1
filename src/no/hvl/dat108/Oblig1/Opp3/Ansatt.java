@@ -48,14 +48,14 @@ public class Ansatt {
         this.aarslonn = aarslonn;
     }
 
-    private static void lonnsoppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer>) {
+    private static void lonnsoppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer> thisIsAnInt) {
 
-    setAarslonn();
+    //setAarslonn();
     }
 
-    private static void skrivUtAlle(List<Ansatt> ansatte){
+    /*private static void skrivUtAlle(List<Ansatt> ansatte){
         Ansatt.forEach(n -> System.out.println(n));
-    }
+    }*/
 }
   /*  Ansatte har fornavn (String),
   etternavn (String),
