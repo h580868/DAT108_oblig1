@@ -10,14 +10,12 @@ public class Main {
     }
 
     void skrivUtAlle(List<Ansatt> ansatte){
-        Ansatt.forEach(n -> System.out.println(n));
+        ansatte.forEach(n -> System.out.print(n));
     }
 
     private static void lonnsOppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer> someFunction) {
-        for (Ansatt an:ansatte) {
-            an.setAarslonn(someFunction(an.getAarslonn(), 1) );
-        }
-        //setAarslonn();
+        ansatte.forEach(a -> someFunction.apply((Ansatt) someFunction));
+
     }
 
     public static void main(String[] args) {
