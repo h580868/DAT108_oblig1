@@ -17,7 +17,7 @@ public class Main {
         System.out.println(beregn((a,b) ->(a+b), 12, 13));
         // ii. Den største av -5 og 3
         System.out.println(beregn((a,b) -> {
-            if(a>b) {return a;} else { return b;}
+            if(a<b) {return a;} else { return b;}
         }, -5, 3));
         System.out.println(beregn((a,b) -> Math.min(a,b), -5, -3));
         // iii. Avstanden (absoluttverdien av differansen) mellom 54 og 45
