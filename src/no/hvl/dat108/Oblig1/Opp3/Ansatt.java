@@ -57,9 +57,7 @@ public class Ansatt {
     public void setKjonn(Kjonn kjonn) {
         this.kjonn = kjonn;
     }
-/*private static void skrivUtAlle(List<Ansatt> ansatte){
-        Ansatt.forEach(n -> System.out.println(n));
-    }*/
+
 }
   /*  Ansatte har fornavn (String),
   etternavn (String),
