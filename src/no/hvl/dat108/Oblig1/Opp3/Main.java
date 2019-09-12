@@ -5,13 +5,17 @@ import java.util.function.Function;
 
 public class Main {
 
+    void lonnsTillegg(Ansatt ansatt) {
+
+    }
+
     void skrivUtAlle(List<Ansatt> ansatte){
         Ansatt.forEach(n -> System.out.println(n));
     }
 
     private static void lonnsOppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer> someFunction) {
         for (Ansatt an:ansatte) {
-            someFunction(an, 1);
+            an.setAarslonn(someFunction(an.getAarslonn(), 1) );
         }
         //setAarslonn();
     }
