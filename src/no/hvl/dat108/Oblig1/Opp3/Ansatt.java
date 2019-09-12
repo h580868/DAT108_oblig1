@@ -6,12 +6,14 @@ import java.util.function.Function;
 public class Ansatt {
     private String fornavn;
     private String etternavn;
+    private Kjonn kjonn;
     private String stilling;
     private int aarslonn;
 
-    public Ansatt(String fornavn, String etternavn, String stilling, int aarslonn) {
+    public Ansatt(String fornavn, String etternavn, Kjonn kjonn, String stilling, int aarslonn) {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
+        this.kjonn = kjonn;
         this.stilling = stilling;
         this.aarslonn = aarslonn;
     }
@@ -48,12 +50,14 @@ public class Ansatt {
         this.aarslonn = aarslonn;
     }
 
-    private static void lonnsoppgjor(List<Ansatt> ansatte, Function<Ansatt, Integer> thisIsAnInt) {
-
-    //setAarslonn();
+    public Kjonn getKjonn() {
+        return kjonn;
     }
 
-    /*private static void skrivUtAlle(List<Ansatt> ansatte){
+    public void setKjonn(Kjonn kjonn) {
+        this.kjonn = kjonn;
+    }
+/*private static void skrivUtAlle(List<Ansatt> ansatte){
         Ansatt.forEach(n -> System.out.println(n));
     }*/
 }
