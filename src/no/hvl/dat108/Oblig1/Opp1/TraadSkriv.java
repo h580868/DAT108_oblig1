@@ -1,24 +1,18 @@
 package no.hvl.dat108.Oblig1.Opp1;
 
-public class TraadSkriv implements Runnable{
-    private StringBuffer person;
-    private String name;
+import java.util.ArrayList;
 
-    public TraadSkriv(StringBuffer person, String name) {
-        this.person = person;
-        this.name = name;
+public class TraadSkriv implements Runnable{
+    private static ArrayList<String> names;
+    private static int nameCounter = 0;
+
+    public TraadSkriv(ArrayList<String> names) {
+        this.names = names;
     }
     @Override
-    public void run() {
-        while (true) {
-            person.replace(0, person.length(), name);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
+    public synchronized void run() {
+        Person.setName(names.get(nameCounter % names.size()));
+        nameCounter ++;
     }
 
 
