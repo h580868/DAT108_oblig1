@@ -1,6 +1,7 @@
 package no.hvl.dat108.Oblig1.Opp4;
 
 import no.hvl.dat108.Oblig1.Opp3.Kjonn;
+import static java.lang.System.out;
 
 public class Ansatt {
     private String fornavn;
@@ -9,7 +10,7 @@ public class Ansatt {
     private String stilling;
     private int aarslonn;
 
-    public Ansatt(String fornavn, String etternavn, Kjonn kjonn, String stilling, int aarslonn) {
+    Ansatt(String fornavn, String etternavn, Kjonn kjonn, String stilling, int aarslonn) {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
         this.kjonn = kjonn;
@@ -17,7 +18,7 @@ public class Ansatt {
         this.aarslonn = aarslonn;
     }
 
-    public String getFornavn() {
+    String getFornavn() {
         return fornavn;
     }
 
@@ -25,7 +26,7 @@ public class Ansatt {
         this.fornavn = fornavn;
     }
 
-    public String getEtternavn() {
+    String getEtternavn() {
         return etternavn;
     }
 
@@ -33,7 +34,7 @@ public class Ansatt {
         this.etternavn = etternavn;
     }
 
-    public String getStilling() {
+    String getStilling() {
         return stilling;
     }
 
@@ -41,20 +42,32 @@ public class Ansatt {
         this.stilling = stilling;
     }
 
-    public int getAarslonn() {
+    int getAarslonn() {
         return aarslonn;
     }
 
-    public void setAarslonn(int aarslonn) {
+    void setAarslonn(int aarslonn) {
         this.aarslonn = aarslonn;
     }
 
-    public Kjonn getKjonn() {
+    Kjonn getKjonn() {
         return kjonn;
     }
 
     public void setKjonn(Kjonn kjonn) {
         this.kjonn = kjonn;
+    }
+
+    public void print() {
+        out.print(fornavn + " " + etternavn + ", " + stilling + ", ");
+        if (kjonn == Kjonn.KVINNE) {
+            out.print("Kvinne");
+        } else if (kjonn == Kjonn.MANN) {
+            out.print("Mann");
+        } else {
+            out.print("???");
+        }
+        out.println(", Aarslonn: " + aarslonn);
     }
 
 }
