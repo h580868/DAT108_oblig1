@@ -21,6 +21,21 @@ public class Main {
                 .filter(a -> a.getKjonn() == Kjonn.KVINNE).forEach(a -> a.setAarslonn(((int)(a.getAarslonn() * 1.06))));
     }
 
+    private static void lonnsTilleggNoStream(List<Ansatt> liste) {
+        for (Ansatt ansatt: liste) {
+            ansatt.setAarslonn(ansatt.getAarslonn() + 25); //+25 as a flat salary raise
+            ansatt.setAarslonn((int)((ansatt.getAarslonn() * 1.01)));
+            if (ansatt.getAarslonn() < 75000) {
+                ansatt.setAarslonn(ansatt.getAarslonn() + 50); //+50 aarslonn for having low aarslonn
+            }
+            if (ansatt.getKjonn() == Kjonn.MANN) {
+                ansatt.setAarslonn((int)(ansatt.getAarslonn() * 1.05)); //+5% salary for being a man
+            } else if (ansatt.getKjonn() == Kjonn.KVINNE) {
+                ansatt.setAarslonn((int)(ansatt.getAarslonn() * 1.06)); //+6% salary for being a woman
+            } //other genders do not get raises, apparently
+        }
+    }
+
     private static void skrivUtAlle(List<Ansatt> ansatte){
         ansatte.forEach(Ansatt::print);
     }
