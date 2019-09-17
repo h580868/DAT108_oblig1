@@ -7,7 +7,7 @@ import static java.lang.System.out;
 
 public class Main {
 
-    void lonnsTillegg(List<Ansatt> liste) {
+    private static void lonnsTillegg(List<Ansatt> liste) {
         //hmm.. I'll just make one line for each thing
         liste //+25 as a flat salary raise
                 .forEach(a -> a.setAarslonn(a.getAarslonn() + 25));
@@ -42,6 +42,10 @@ public class Main {
         a1.print();
         a2.print();
 
+        skrivUtAlle(ansatte);
+
+        out.println("Running lonnsTilleg");
+        lonnsTillegg(ansatte);
         skrivUtAlle(ansatte);
     }
 }
