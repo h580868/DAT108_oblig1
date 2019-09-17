@@ -20,8 +20,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Ansatt ansatt1;
+        Ansatt a1 = new Ansatt("Hassan", "Ali", Kjonn.MANN,"Student", 50000);
+        Ansatt a2 = new Ansatt("Katarina", "Nederlid", Kjonn.KVINNE, "Student", 50001);
 
-
+        System.out.println(a1);
+        System.out.println(a2);
     }
 }

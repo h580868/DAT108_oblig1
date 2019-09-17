@@ -21,12 +21,13 @@ public class TraadSemaSkriv implements Runnable {
                 sema.acquire();
                 Person.setName(names.get(nameCounter % names.size()));
                 nameCounter++;
-                sema.release();
+
                 i++;
                 //wait(50);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            sema.release();
 
         }
     }
